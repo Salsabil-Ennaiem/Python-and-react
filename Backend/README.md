@@ -57,3 +57,18 @@ Frontend/
 
 run it : npm run dev
 
+
+
+
+1-create the Dockerfile for backen and for the Frontend and docker-compose.yml for the root  and nginx.conffor frontend
+*nginx.conf : [When you run npm run build, Vite creates a folder called dist/ that contains pure static files (HTML, CSS, JS). Nginx’s job is simply to serve those files ]
+*DockerfileRecipe to build one image (one service) Recipe for one 
+*dishdocker-compose.yml  Orchestrates multiple containers together Full menu + how to serve everything together
+
+2-add in the main.py "http://localhost:3000",  to running with Docker 
+3-then build it : docker compose up --build
+*in case u wanna stope it : docker compose down
+
+docker build  :creates the image.
+docker run  :creates and starts a container from it.
+docker push : uploads the image to Docker Hub; others can then : docker pull .
